@@ -1,3 +1,6 @@
+#ifndef TEST_H
+#define TEST_H
+
 //Partie 1
 
 void test_creer_grille();
@@ -19,3 +22,9 @@ void test_pas_un_zero_consecutifs();
 void test_meme_nombre_zero_un();
 void test_ligne_colonnes_distincts();
 void test_est_partie_gagnee();
+
+//Partie 3
+
+void test_est_mouvement_valide();
+
+#endif

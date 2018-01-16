@@ -8,6 +8,7 @@
 
 #include "fonctions.h"
 #include "affichage.h"
+#include "test.h"
 
 ///////////////////
 // Fonction main //
@@ -39,6 +40,10 @@ int main(){
   //test_est_partie_gagnee();
   //test_ligne_colonnes_distincts();
   //test_initialise_grille();
+
+  //test_partie_3
+
+  test_est_mouvement_valide();
 
   /////////////////////////////////////////
   // Partie permettant de jouer au Takuzu//

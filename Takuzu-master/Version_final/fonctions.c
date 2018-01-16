@@ -1,6 +1,8 @@
 #include "fonctions.h"
 #include <assert.h>
 #include <stdio.h>
+#include <stdlib.h>
+#include "affichage.h"
 //Partie 1
 
 /**
@@ -381,7 +383,7 @@ void jouer(char ch[])
   {
     afficher_grille(g);
     tour_de_jeu(g);
-    printf("%d %d %d %d\n",est_grille_pleine(g),pas_zero_un_consecutifs(g),meme_nombre_zero_un(g),lignes_colonnes_distinctes(g));
+    printf("%d %d %d %d\n",est_grille_pleine(g),pas_zero_un_consecutifs(g),meme_nombre_zero_un(g),lignes_colonnes_distinctes(g)); //a enlever
 
   }
   afficher_grille(g);

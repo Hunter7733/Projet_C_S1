@@ -1,3 +1,8 @@
+#include "fonctions.h"
+#include "affichage.h"
+#include <stdio.h>
+#include <assert.h>
+
 ///////////////////////////////////////////////////
 //  Code correspondant aux tests de la partie 1  //
 ///////////////////////////////////////////////////
@@ -303,4 +308,23 @@ void test_est_partie_gagnee()
   }
   assert(est_partie_gagnee(g));
   printf("Test est_partie_gagnee passee\n");
+}
+
+
+//////////////////
+// Test Partie 3//
+//////////////////
+
+void test_est_mouvement_valide()
+{
+	int l,c,v;
+	grille * g= initialiser_grille("Grilles/G4/grille1.txt");
+	assert(est_mouvement_valide(g,"AA1",&l,&c,&v));
+	assert(get_val_cellule(g,l,c));
+	assert(!est_cellule_initiale(g,l,c));
+	assert(est_mouvement_valide(g,"AA",&l,&c,&v));
+	assert(get_val_cellule(g,l,c) == -1);
+
+	printf("test_est_mouvement_valide passee");
+	clear_terminal();
 }
