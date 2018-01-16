@@ -1,0 +1,18 @@
+Partie 1:
+
+fini mais problème dans "afficher_grille":
+  -L'affichage marche pour 4 mais pas bien pour 6 et 8:
+  Solution trouvée(bof) --> Boucle "for" pour 4 et une autre pour 6 et 8.
+        --pour 4:
+                for (j = 0; j <= (g->n/2); j+=2)
+                {
+                  ligne_cellule_couleur(g,i,j,couleur1);
+                  ligne_cellule_couleur(g,i,j+1,couleur2);
+                }
+        --6 et 8:
+                for (j = 0; j <= (g->n/2)+2; j+=2)
+                {
+                  ligne_cellule_couleur(g,i,j,couleur1);
+                  ligne_cellule_couleur(g,i,j+1,couleur2);
+                }
+  La différence se situe juste dans la condition.
